@@ -46,7 +46,6 @@ def integrate(function, lower, upper):
 		you'll probably need the 'eval' function to evaluate the function
 		to integrate given as a string.
 	"""
-	x = 1
 	try:
 		_ = eval (function) #_ c'est une variable qui n'est pas utilisée
 	except:
@@ -57,8 +56,12 @@ def integrate(function, lower, upper):
 	fct = lambda x: eval(function)
 	result = integrate.quad(fct, lower, upper)
 	return result[0]
+"je modifie des trucs"
 
 if __name__ == '__main__':
 	print(fact(5))
-	print(roots(1, 0, 1))
-	print(integrate('x ** 2 - 1', -1, 1))
+	print(roots(1, 9, 1))
+	print(integrate('x ** 2 - 1', -2, 2))
+
+"regarde j'ai modifié un truc woula helloe et j'ai remodifié un truc
+"
